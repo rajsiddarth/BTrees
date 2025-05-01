@@ -1,4 +1,4 @@
-# Author credit goes to former student Brendan Smith from the Spring 2022 class.
+
 #
 from collections import deque
 from typing import Any, Dict, Iterable
