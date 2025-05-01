@@ -33,22 +33,14 @@ Helpful Tips (You will need these):
     - Forgetting to update the KEYS of a node who just gained a child
     - Forgetting to redistribute keys or children of a node who just split
     - Nesting nodes inside of each other instead of using disk addresses to reference them
-        - This may seem to work but will fail our grader's stress tests
-4. USE THE DEBUGGER
-5. USE ASSERT STATEMENTS AS MUCH AS POSSIBLE
-    - e.g. `assert node.parent != None or node == self.root` <- if this fails, something is very wrong
-
---------------------------- BEST OF LUCK ---------------------------
-"""
-
-# Complete both the find and insert methods to earn full credit
+        
 class BTree:
     def __init__(self, M: int, L: int):
         """
         Initialize a new BTree.
-        You do not need to edit this method, nor should you.
+    
         M: The maximum number of keys allowed in an internal (non-leaf) node before it must be split.
-         L: The maximum number of keys allowed in a leaf node before it must be split.
+        L: The maximum number of keys allowed in a leaf node before it must be split.
             Stores only three pieces of data in memory:
            - M
            - L
@@ -249,5 +241,3 @@ class BTree:
         return node.find_data(key)
 
 
-    def delete(self, key: KT) -> None:
-        raise NotImplementedError("Karma method delete()")
